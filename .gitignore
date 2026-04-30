@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Playwright
+test-results/
+playwright-report/
+
+# Temp
+*.tmp
+*.log
+.cache/
+
+# Don't commit raw scraped data — it can be re-generated
+# (Comment these out if you want to ship the scraped dataset alongside the code.)
+# data/raw/*.json
+# data/processed/*.csv
+# data/insights/*.json

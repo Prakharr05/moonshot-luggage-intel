@@ -1,0 +1,7 @@
+brand,avg_discount_pct,avg_price,avg_list_price,discount_strategy
+Aristocrat,64.1,1817.0,5085.0,Heavy discount
+Safari,59.6,2184.0,5239.0,Heavy discount
+Nasher Miles,58.9,2309.0,5611.0,Heavy discount
+Skybags,57.6,3884.0,9171.0,Heavy discount
+VIP,52.5,3050.0,6344.0,Moderate
+American Tourister,46.3,6501.0,11714.0,Moderate

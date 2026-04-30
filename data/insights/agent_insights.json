@@ -1,0 +1,62 @@
+[
+  {
+    "headline": "Nasher Miles delivers more sentiment per rupee than peers",
+    "body": "After adjusting for size category, Nasher Miles earns the highest value-for-money score in the set (+2.19). It sits in the Mid-tier band but converts price into review sentiment more efficiently than brands at similar price points.",
+    "evidence": {
+      "vfm_score": 2.19,
+      "positioning": "Mid-tier",
+      "avg_price": 2309,
+      "sentiment_score": 0.56
+    },
+    "surprise": 2.69,
+    "category": "pricing"
+  },
+  {
+    "headline": "On material, American Tourister leads while Aristocrat trails",
+    "body": "For the 'material' aspect, American Tourister has a +1.00 net sentiment score (out of 14 mentions), while Aristocrat sits at -1.00 (11 mentions). Gap of 2.00 points is one of the largest in the dataset.",
+    "evidence": {
+      "winner": "American Tourister",
+      "winner_score": 1.0,
+      "loser": "Aristocrat",
+      "loser_score": -1.0,
+      "gap": 2.0
+    },
+    "surprise": 2.0,
+    "category": "aspect"
+  },
+  {
+    "headline": "On wheels, Safari leads while VIP trails",
+    "body": "For the 'wheels' aspect, Safari has a +1.00 net sentiment score (out of 17 mentions), while VIP sits at -1.00 (16 mentions). Gap of 2.00 points is one of the largest in the dataset.",
+    "evidence": {
+      "winner": "Safari",
+      "winner_score": 1.0,
+      "loser": "VIP",
+      "loser_score": -1.0,
+      "gap": 2.0
+    },
+    "surprise": 2.0,
+    "category": "aspect"
+  },
+  {
+    "headline": "American Tourister: weakest value conversion in the set",
+    "body": "American Tourister posts a -1.03 VFM score — the lowest in the set. Its premium pricing isn't justified by correspondingly higher review sentiment relative to peers.",
+    "evidence": {
+      "vfm_score": -1.03,
+      "positioning": "Premium",
+      "avg_price": 6501,
+      "sentiment_score": 0.45
+    },
+    "surprise": 1.33,
+    "category": "pricing"
+  },
+  {
+    "headline": "Nasher Miles: text sentiment is warmer than the star rating implies",
+    "body": "Despite an average rating of 3.74★, the actual review text for Nasher Miles carries a +0.56 sentiment score. The brand is under-rated — readers describing positive experiences in text are still picking middling stars.",
+    "evidence": {
+      "avg_rating": 3.74,
+      "sentiment_score": 0.56
+    },
+    "surprise": 0.7950000000000002,
+    "category": "mismatch"
+  }
+]

@@ -1,0 +1,51 @@
+brand,aspect,mentions,positive,negative,neutral,net_score
+American Tourister,value,43,40,0,3,0.93
+American Tourister,durability,31,23,8,0,0.484
+American Tourister,wheels,30,21,9,0,0.4
+American Tourister,design,21,18,3,0,0.714
+American Tourister,weight,20,18,0,2,0.9
+American Tourister,size_capacity,17,17,0,0,1.0
+American Tourister,lock,14,5,1,8,0.286
+American Tourister,material,14,14,0,0,1.0
+American Tourister,zipper,10,0,10,0,-1.0
+Aristocrat,value,74,57,2,15,0.743
+Aristocrat,durability,35,12,23,0,-0.314
+Aristocrat,weight,33,30,1,2,0.879
+Aristocrat,size_capacity,28,28,0,0,1.0
+Aristocrat,handle,15,1,0,14,0.067
+Aristocrat,wheels,13,0,13,0,-1.0
+Aristocrat,zipper,12,0,12,0,-1.0
+Aristocrat,material,11,0,11,0,-1.0
+Aristocrat,design,6,6,0,0,1.0
+Nasher Miles,design,84,51,12,21,0.464
+Nasher Miles,value,81,58,3,20,0.679
+Nasher Miles,weight,23,18,3,2,0.652
+Nasher Miles,lock,18,18,0,0,1.0
+Nasher Miles,size_capacity,18,1,0,17,0.056
+Nasher Miles,zipper,13,0,13,0,-1.0
+Nasher Miles,wheels,12,4,0,8,0.333
+Safari,value,73,64,0,9,0.877
+Safari,weight,40,34,1,5,0.825
+Safari,design,25,13,0,12,0.52
+Safari,size_capacity,23,23,0,0,1.0
+Safari,durability,21,21,0,0,1.0
+Safari,wheels,17,17,0,0,1.0
+Safari,zipper,16,0,16,0,-1.0
+Safari,handle,12,0,12,0,-1.0
+Skybags,value,63,48,0,15,0.762
+Skybags,wheels,39,23,16,0,0.179
+Skybags,material,29,7,0,22,0.241
+Skybags,weight,25,22,2,1,0.8
+Skybags,design,25,8,0,17,0.32
+Skybags,size_capacity,23,23,0,0,1.0
+Skybags,durability,16,4,0,12,0.25
+Skybags,zipper,16,2,0,14,0.125
+Skybags,handle,7,0,7,0,-1.0
+VIP,value,91,74,11,6,0.692
+VIP,handle,43,29,14,0,0.349
+VIP,durability,31,16,15,0,0.032
+VIP,size_capacity,25,25,0,0,1.0
+VIP,wheels,16,0,16,0,-1.0
+VIP,weight,9,2,7,0,-0.556
+VIP,zipper,7,0,7,0,-1.0
+VIP,design,1,1,0,0,1.0

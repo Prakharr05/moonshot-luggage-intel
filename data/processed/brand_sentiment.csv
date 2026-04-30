@@ -1,0 +1,7 @@
+brand,review_count,sentiment_score,median_sentiment,pct_positive,pct_neutral,pct_negative
+Nasher Miles,128,0.559,0.667,84.4,4.7,10.9
+American Tourister,105,0.453,0.689,76.2,1.9,21.9
+VIP,136,0.32,0.564,61.8,6.6,31.6
+Safari,133,0.289,0.458,57.9,6.8,35.3
+Skybags,128,0.289,0.44,60.9,4.7,34.4
+Aristocrat,138,0.228,0.382,56.5,8.0,35.5
