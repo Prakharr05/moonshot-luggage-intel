@@ -1,72 +1,9 @@
 [
   {
-    "asin": "B0FDGKWJRY",
-    "brand": "Safari",
-    "title": "Urban Jungle by Safari Hold-All Premium Top-Open Medium (67 cm) Trolley Bag, Polycarbonate Check-In Suitcase with 8 Silent Wheels and TSA Lock, Hardside Travelling Luggage for Both Men & Women (Green)",
-    "url": "https://www.amazon.in/Urban-Jungle-Hold-All-Polycarbonate-Travelling/dp/B0FDGKWJRY/ref=sr_1_51",
-    "price": 8495.0,
-    "list_price": 12099.0,
-    "discount_pct": 30.0,
-    "rating": 4.5,
-    "rating_count": 45,
-    "review_count": 0,
-    "image_url": "https://m.media-amazon.com/images/I/512RHV5NpAL._AC_UL320_.jpg",
-    "bullet_features": [
-      "Top-Open Construction: The 80:20 construction ensures the trolley opens from the top for easy packing access and saves space in tight hotel rooms or airport lounges.",
-      "Impressive Durability and Volume: The 100% virgin polycarbonate shell is not just lighter but also stronger, flexing while most shells would crack. This versatile trolley bag comes with an expander which provides additional packing capacity with the simple pull of a zipper, perfect for accommodating extra items or last-minute purchases.",
-      "Superior Maneuverability: Glide effortlessly with our high performance 360° dual wheels that ensure smooth and quiet movement across any terrain - whether carpet floors or cobbled streets. Our ultra-stable aluminium trolley with multiple height adjustments allow for easy maneuverability and maximum comfort.",
-      "Ultimate Security: Keep your belongings secure with our built-in, internationally recognized, keyless TSA-approved lock that stays flush to prevent breakage or damage, adding an extra layer of protection against theft.",
-      "5 Year International Coverage: Quality is everything, and we swear by ours. Enjoy complete peace of mind with our comprehensive 5 Year International Coverage that replaces your bag with a brand new piece instead of repairing it. Dimensions: 67X44X26cm"
-    ],
-    "category_hint": "Large"
-  },
-  {
-    "asin": "B0GRQHLWKT",
-    "brand": "Safari",
-    "title": "PC Hard Shell 8 Spinner Wheels Safari Printed Small Size 20 Inch Trolley Bag for Travel with Dual Wheels Hue, Multicolor",
-    "url": "https://www.amazon.in/Spinner-Wheels-Printed-Trolley-Multicolor/dp/B0GRQHLWKT/ref=sr_1_53",
-    "price": 2999.0,
-    "list_price": 8140.0,
-    "discount_pct": 63.0,
-    "rating": 5.0,
-    "rating_count": null,
-    "review_count": 0,
-    "image_url": "https://m.media-amazon.com/images/I/61PvP1NsItL._AC_UL320_.jpg",
-    "bullet_features": [
-      "DURABLE CONSTRUCTION: Made with high-quality polycarbonate shell material that offers excellent scratch resistance and long-lasting durability for frequent travels",
-      "SECURE LOCKING: Features a fixed combination lock system for enhanced security of your belongings during transit",
-      "SMOOTH MOBILITY: Equipped with dual wheels and push-button trolley handle for effortless 360-degree movement and comfortable maneuverability",
-      "WEATHER PROTECTION: Water-resistant and dust-proof design with stylish blue and pink marble pattern keeps your belongings safe in various weather conditions",
-      "PRACTICAL DESIGN: Small-sized 20-inch trolley bag perfect for short trips and weekend getaways, featuring a spacious interior with organised compartments Cabin"
-    ],
-    "category_hint": "Cabin"
-  },
-  {
-    "asin": "B0DNMSYSMK",
-    "brand": "Safari",
-    "title": "Urban Jungle by Safari, Cabin Trolley Bag with Laptop Compartment, Hardside Polycarbonate Small (55 Cm) Suitcase with USB Charging Socket, 8 Silent Wheel Luggage for Both Men & Women (Cloud White)",
-    "url": "https://www.amazon.in/Urban-Jungle-Compartment-Hardside-Polycarbonate/dp/B0DNMSYSMK/ref=sr_1_54",
-    "price": 6495.0,
-    "list_price": 13999.0,
-    "discount_pct": 54.0,
-    "rating": 4.3,
-    "rating_count": 147,
-    "review_count": 0,
-    "image_url": "https://m.media-amazon.com/images/I/51neBGvBvJL._AC_UL320_.jpg",
-    "bullet_features": [
-      "[Easy Access Front Compartment]: The front-open compartment offers easy access to all your travel essentials with cleverly placed pockets and organisers. while securely housing your laptop (up to 15’’) in a dedicated, padded sleeve, ensuring your device stays safe during travel.",
-      "[Lightweight and Durable] : The 100% virgin polycarbonate shell is not just lighter but also stronger, flexing while most shells would crack. The hard shell luggage is designed with reinforced grooves for added strength, and a brushed texture to prevent against scratches. Ideal for frequent travelers who need robust yet lightweight luggage.",
-      "[Superior Maneuverability]: Glide effortlessly with our high performance 360° rotation wheels that ensure smooth and quiet movement across any terrain - whether carpet floors or cobbled streets. Our ultra-stable aluminum trolley with multiple height adjustments along with thickened TPE rubber wheels allow for easy maneuverability and maximum comfort.",
-      "[Organized Storage]: The hardest part of traveling made easier. Maximize your storage capacity with the spacious interior and cleverly placed pockets, which ensure you stay organized on the go. The quick-action compression straps ensure your clothes stay neatly packed. The dedicated power bank pocket links to our integrated USB charging port, ensuring your devices stay charged and you stay connected on the go!",
-      "[Ultimate Travel Security]: Keep your belongings secure with our built-in, internationally recognized, keyless TSA-approved lock, while the dual-layer, tamper-proof zipper (3x stronger than regular zippers) adds an extra layer of protection against theft. Enjoy complete peace of mind with our comprehensive 5 Year International Warranty that replaces your bag with a brand new piece instead of repairing it. Dimensions:"
-    ],
-    "category_hint": "Cabin"
-  },
-  {
     "asin": "B0D798WHVP",
     "brand": "Safari",
     "title": "Urban Jungle by Safari Medium, The Caliber (65cm) Trolley, 70L Capacity Hard Sided Polycarbonate Suitcase, TSA Lock, Anti Theft Zipper, 8 Silent Spinner Wheels (Green)",
-    "url": "https://www.amazon.in/Urban-Jungle-Hardside-Polycarbonate-Travelling/dp/B0D798WHVP/ref=sr_1_56",
+    "url": "https://www.amazon.in/Urban-Jungle-Hardside-Polycarbonate-Travelling/dp/B0D798WHVP/ref=sr_1_50",
     "price": 5495.0,
     "list_price": 7865.0,
     "discount_pct": 30.0,
@@ -84,10 +21,31 @@
     "category_hint": "Medium"
   },
   {
+    "asin": "B0DNMSYSMK",
+    "brand": "Safari",
+    "title": "Urban Jungle by Safari, Cabin Trolley Bag with Laptop Compartment, Hardside Polycarbonate Small (55 Cm) Suitcase with USB Charging Socket, 8 Silent Wheel Luggage for Both Men & Women (Cloud White)",
+    "url": "https://www.amazon.in/Urban-Jungle-Compartment-Hardside-Polycarbonate/dp/B0DNMSYSMK/ref=sr_1_56",
+    "price": 6495.0,
+    "list_price": 13999.0,
+    "discount_pct": 54.0,
+    "rating": 4.3,
+    "rating_count": 147,
+    "review_count": 0,
+    "image_url": "https://m.media-amazon.com/images/I/51neBGvBvJL._AC_UL320_.jpg",
+    "bullet_features": [
+      "[Easy Access Front Compartment]: The front-open compartment offers easy access to all your travel essentials with cleverly placed pockets and organisers. while securely housing your laptop (up to 15’’) in a dedicated, padded sleeve, ensuring your device stays safe during travel.",
+      "[Lightweight and Durable] : The 100% virgin polycarbonate shell is not just lighter but also stronger, flexing while most shells would crack. The hard shell luggage is designed with reinforced grooves for added strength, and a brushed texture to prevent against scratches. Ideal for frequent travelers who need robust yet lightweight luggage.",
+      "[Superior Maneuverability]: Glide effortlessly with our high performance 360° rotation wheels that ensure smooth and quiet movement across any terrain - whether carpet floors or cobbled streets. Our ultra-stable aluminum trolley with multiple height adjustments along with thickened TPE rubber wheels allow for easy maneuverability and maximum comfort.",
+      "[Organized Storage]: The hardest part of traveling made easier. Maximize your storage capacity with the spacious interior and cleverly placed pockets, which ensure you stay organized on the go. The quick-action compression straps ensure your clothes stay neatly packed. The dedicated power bank pocket links to our integrated USB charging port, ensuring your devices stay charged and you stay connected on the go!",
+      "[Ultimate Travel Security]: Keep your belongings secure with our built-in, internationally recognized, keyless TSA-approved lock, while the dual-layer, tamper-proof zipper (3x stronger than regular zippers) adds an extra layer of protection against theft. Enjoy complete peace of mind with our comprehensive 5 Year International Warranty that replaces your bag with a brand new piece instead of repairing it. Dimensions:"
+    ],
+    "category_hint": "Cabin"
+  },
+  {
     "asin": "B0DDLDXT8N",
     "brand": "Skybags",
     "title": "Skybags Splash Set (55+65+75 cm) | Printed Luggage Trolley Set with 8 Wheels and in-Built Combination Lock | Unisex (Blue)",
-    "url": "https://www.amazon.in/Skybags-Printed-Luggage-Trolley-Combination/dp/B0DDLDXT8N/ref=sr_1_16",
+    "url": "https://www.amazon.in/Skybags-Printed-Luggage-Trolley-Combination/dp/B0DDLDXT8N/ref=sr_1_15",
     "price": 6339.0,
     "list_price": 19998.0,
     "discount_pct": 68.0,
@@ -108,7 +66,7 @@
     "asin": "B0GPQR8MNP",
     "brand": "American Tourister",
     "title": "Kamiliant by American Tourister 3 Pc Harrier Edge 8W Set 56 Cm, 68 Cm & 78 Cm - Small, Medium & Large Polypropylene(PP) Hardside 8 Wheels Spinner Luggage Set/Trolley Bag Set (Iron Grey)",
-    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Harrier-Edge/dp/B0GPQR8MNP/ref=sr_1_16",
+    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Harrier-Edge/dp/B0GPQR8MNP/ref=sr_1_8",
     "price": 5509.0,
     "list_price": 33100.0,
     "discount_pct": 83.0,
@@ -125,31 +83,10 @@
     "category_hint": "Large"
   },
   {
-    "asin": "B0F29GJ4QT",
-    "brand": "American Tourister",
-    "title": "KAMILIANT by American Tourister Savvy | Trolley Bag Check-in Large Size (80 cms) for Travel| Hard Case Polypropylene (PP) Suitcase | 360° 8-Wheel Luggage Trolley | Combination Lock | Deep Ocean",
-    "url": "https://www.amazon.in/KAMILIANT-American-Tourister-Spinner-Suitcase/dp/B0F29GJ4QT/ref=sr_1_38",
-    "price": 3039.0,
-    "list_price": 13800.0,
-    "discount_pct": 78.0,
-    "rating": 4.1,
-    "rating_count": 2860,
-    "review_count": 0,
-    "image_url": "https://m.media-amazon.com/images/I/71EzSIf9cmL._AC_UL320_.jpg",
-    "bullet_features": [
-      "Pack More. Worry Less - A smart boxy silhouette that gives you maximum packing volume — so you can carry more without making the trolley feel bulky.",
-      "Move Smooth. Feel Free - Retractable top and side handles paired with 360° smooth-rolling 8 wheels make every journey effortless, even when fully packed.",
-      "Safe Wherever You Go - Comes with a built-in 3-digit fixed combination lock that keeps your belongings secure and gives you peace of mind on the move.",
-      "Organise Like a Pro - Cross-ribbons in the main compartment and a U-shaped pocket help keep everything neatly in place for easy access and better space management.",
-      "Light on You. Tough on Travel - A lightweight yet durable shell engineered to handle frequent trips — strong enough for the world, easy enough for everyday travel."
-    ],
-    "category_hint": "Large"
-  },
-  {
     "asin": "B0GNSJ69XH",
     "brand": "American Tourister",
     "title": "Kamiliant by American Tourister Rock-Lite 66L Hard Sided Trolley Bag for Men & Women with 3 Digit Combination Lock, Set of 2pc (Small & Medium) - Cress Green",
-    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Rock-Lite-Combination/dp/B0GNSJ69XH/ref=sr_1_40",
+    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Rock-Lite-Combination/dp/B0GNSJ69XH/ref=sr_1_35",
     "price": null,
     "list_price": 15998.0,
     "discount_pct": 56.0,
@@ -161,10 +98,25 @@
     "category_hint": "Set"
   },
   {
+    "asin": "B0GNS6KGPR",
+    "brand": "American Tourister",
+    "title": "Kamiliant by American Tourister Rock-Lite 66L Hard Sided Trolley Bag for Men & Women with 3 Digit Combination Lock, Set of 2pc (Small & Medium) - Deep Ocean",
+    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Rock-Lite-Combination/dp/B0GNS6KGPR/ref=sr_1_47",
+    "price": null,
+    "list_price": 33100.0,
+    "discount_pct": null,
+    "rating": 5.0,
+    "rating_count": null,
+    "review_count": 0,
+    "image_url": "https://m.media-amazon.com/images/I/51fqFlWiZhL._AC_UL320_.jpg",
+    "bullet_features": [],
+    "category_hint": "Set"
+  },
+  {
     "asin": "B0CH15MZVC",
     "brand": "American Tourister",
     "title": "Kamiliant by American Tourister Harrier Zing|Trolley Bag Check-in Large (79 cms) for Travel|Hard Case Polypropylene (PP) Suitcase|360° 8-Wheel Spinner Luggage Trolley|Combination Lock|Military Olive",
-    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Suitcase-Military/dp/B0CH15MZVC/ref=sr_1_41",
+    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Suitcase-Military/dp/B0CH15MZVC/ref=sr_1_48",
     "price": 3329.0,
     "list_price": 13800.0,
     "discount_pct": 76.0,
@@ -182,25 +134,31 @@
     "category_hint": "Large"
   },
   {
-    "asin": "B0GNS6KGPR",
+    "asin": "B0F29GJ4QT",
     "brand": "American Tourister",
-    "title": "Kamiliant by American Tourister Rock-Lite 66L Hard Sided Trolley Bag for Men & Women with 3 Digit Combination Lock, Set of 2pc (Small & Medium) - Deep Ocean",
-    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Rock-Lite-Combination/dp/B0GNS6KGPR/ref=sr_1_52",
-    "price": null,
-    "list_price": 29297.0,
-    "discount_pct": null,
-    "rating": 5.0,
-    "rating_count": null,
+    "title": "KAMILIANT by American Tourister Savvy | Trolley Bag Check-in Large Size (80 cms) for Travel| Hard Case Polypropylene (PP) Suitcase | 360° 8-Wheel Luggage Trolley | Combination Lock | Deep Ocean",
+    "url": "https://www.amazon.in/KAMILIANT-American-Tourister-Spinner-Suitcase/dp/B0F29GJ4QT/ref=sr_1_50",
+    "price": 3039.0,
+    "list_price": 13800.0,
+    "discount_pct": 78.0,
+    "rating": 4.1,
+    "rating_count": 2860,
     "review_count": 0,
-    "image_url": "https://m.media-amazon.com/images/I/51fqFlWiZhL._AC_UL320_.jpg",
-    "bullet_features": [],
-    "category_hint": "Set"
+    "image_url": "https://m.media-amazon.com/images/I/71EzSIf9cmL._AC_UL320_.jpg",
+    "bullet_features": [
+      "Pack More. Worry Less - A smart boxy silhouette that gives you maximum packing volume — so you can carry more without making the trolley feel bulky.",
+      "Move Smooth. Feel Free - Retractable top and side handles paired with 360° smooth-rolling 8 wheels make every journey effortless, even when fully packed.",
+      "Safe Wherever You Go - Comes with a built-in 3-digit fixed combination lock that keeps your belongings secure and gives you peace of mind on the move.",
+      "Organise Like a Pro - Cross-ribbons in the main compartment and a U-shaped pocket help keep everything neatly in place for easy access and better space management.",
+      "Light on You. Tough on Travel - A lightweight yet durable shell engineered to handle frequent trips — strong enough for the world, easy enough for everyday travel."
+    ],
+    "category_hint": "Large"
   },
   {
     "asin": "B0BL11Q9D3",
     "brand": "American Tourister",
     "title": "Kamiliant American Tourister Harrier|Cabin Trolley Bag Small Size (56 cms) for Travel| Hard Case Polypropylene (PP) Suitcase|360° 4-Wheel Spinner Luggage Trolley|Combination Lock|Iron Grey",
-    "url": "https://www.amazon.in/kamiliant-American-TouristerHarrier-Spinner-Polypropylene/dp/B0BL11Q9D3/ref=sr_1_19",
+    "url": "https://www.amazon.in/kamiliant-American-TouristerHarrier-Spinner-Polypropylene/dp/B0BL11Q9D3/ref=sr_1_30",
     "price": 1899.0,
     "list_price": 7500.0,
     "discount_pct": 75.0,
@@ -221,7 +179,7 @@
     "asin": "B0BW9G22WP",
     "brand": "American Tourister",
     "title": "Kamiliant American Tourister Harrier|Trolley Bag Check-in Medium Size (68 cms) for Travel| Hard Case Polypropylene (PP) Suitcase|360° 4-Wheel Spinner Luggage Trolley|Combination Lock|Carrot Orange",
-    "url": "https://www.amazon.in/Kamiliant-American-TouristerHarrier-Spinner-Polypropylene/dp/B0BW9G22WP/ref=sr_1_26",
+    "url": "https://www.amazon.in/Kamiliant-American-TouristerHarrier-Spinner-Polypropylene/dp/B0BW9G22WP/ref=sr_1_40",
     "price": 2279.0,
     "list_price": 9550.0,
     "discount_pct": 76.0,
@@ -239,10 +197,25 @@
     "category_hint": "Large"
   },
   {
+    "asin": "B0GNS9H7QW",
+    "brand": "American Tourister",
+    "title": "Kamiliant by American Tourister Rock-Lite 66L Hard Sided Trolley Bag for Men & Women with 3 Digit Combination Lock, Set of 2pc (Small & Medium) - Black",
+    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Rock-Lite-Combination/dp/B0GNS9H7QW/ref=sr_1_48",
+    "price": null,
+    "list_price": 15998.0,
+    "discount_pct": 59.0,
+    "rating": 5.0,
+    "rating_count": null,
+    "review_count": 0,
+    "image_url": "https://m.media-amazon.com/images/I/51GMgY-nzXL._AC_UL320_.jpg",
+    "bullet_features": [],
+    "category_hint": "Set"
+  },
+  {
     "asin": "B0F29JSF4X",
     "brand": "American Tourister",
     "title": "KAMILIANT by American Tourister Savvy|Trolley Bag Check-in Large Size (80 cms) for Travel| Hard Case Polypropylene (PP) Suitcase|360° 8-Wheel Spinner Luggage Trolley|Combination Lock|Black",
-    "url": "https://www.amazon.in/KAMILIANT-American-Tourister-Spinner-Suitcase/dp/B0F29JSF4X/ref=sr_1_43",
+    "url": "https://www.amazon.in/KAMILIANT-American-Tourister-Spinner-Suitcase/dp/B0F29JSF4X/ref=sr_1_55",
     "price": 3039.0,
     "list_price": 13800.0,
     "discount_pct": 78.0,
@@ -263,7 +236,7 @@
     "asin": "B0CH11HSFB",
     "brand": "American Tourister",
     "title": "Kamiliant by American Tourister Harrier Zing|Cabin Trolley Bag Small Size(56 cms) for Travel| Hard Case Polypropylene (PP) Suitcase|360° 8-Wheel Spinner Luggage Trolley|Combination Lock|Military Olive",
-    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Suitcase-Military/dp/B0CH11HSFB/ref=sr_1_46",
+    "url": "https://www.amazon.in/Kamiliant-American-Tourister-Suitcase-Military/dp/B0CH11HSFB/ref=sr_1_56",
     "price": 2189.0,
     "list_price": 8500.0,
     "discount_pct": 74.0,
@@ -284,7 +257,7 @@
     "asin": "B0FPXMYQZY",
     "brand": "VIP",
     "title": "Aristocrat Atlas Set of 3 Trolley Bag 55, 66 & 77cm | Small+Medium+Large | Hard Luggage | Smooth 8-Wheel Suitcase | Combination Lock with Sturdy Zipper | Full Fabric Convipack | 3-Year Warranty (Teal)",
-    "url": "https://www.amazon.in/Aristocrat-Suitcase-Combination-Convipack-Warranty/dp/B0FPXMYQZY/ref=sr_1_13",
+    "url": "https://www.amazon.in/Aristocrat-Suitcase-Combination-Convipack-Warranty/dp/B0FPXMYQZY/ref=sr_1_5",
     "price": 5479.0,
     "list_price": 25880.0,
     "discount_pct": 79.0,
@@ -305,7 +278,7 @@
     "asin": "B0FC6P433Z",
     "brand": "VIP",
     "title": "Aristocrat Comet Set of 2 Trolley Bag 56, 66cm | Small+Medium| Hard Luggage| Smooth 8-Wheel Suitcase| Combination Lock With Sturdy Zipper| Full Fabric Convipack | 3-year International Warranty (Green)",
-    "url": "https://www.amazon.in/Aristocrat-Suitcase-Combination-Convipack-International/dp/B0FC6P433Z/ref=sr_1_15",
+    "url": "https://www.amazon.in/Aristocrat-Suitcase-Combination-Convipack-International/dp/B0FC6P433Z/ref=sr_1_7",
     "price": 3079.0,
     "list_price": 18880.0,
     "discount_pct": 84.0,
@@ -321,6 +294,27 @@
       "Full Fabric Convipack Interior: Fully lined interior with organized compartments for efficient packing"
     ],
     "category_hint": "Set"
+  },
+  {
+    "asin": "B0FMDR8HNS",
+    "brand": "VIP",
+    "title": "Aristocrat Bruce Cabin Trolley Bag 54cm | Small | Hard Luggage | Smooth 8-Wheel Suitcase | Secure Combination Lock with Sturdy Zipper | Full Fabric Convipack | 3-Year Warranty (Blue)",
+    "url": "https://www.amazon.in/Aristocrat-Suitcase-Combination-Convipack-Warranty/dp/B0FMDR8HNS/ref=sr_1_53",
+    "price": 1489.0,
+    "list_price": 7400.0,
+    "discount_pct": 80.0,
+    "rating": 4.0,
+    "rating_count": 923,
+    "review_count": 0,
+    "image_url": "https://m.media-amazon.com/images/I/71vAo2WjYZL._AC_UL320_.jpg",
+    "bullet_features": [
+      "Stylish Prints That Match Your Vibe – Eye-catching designs that reflect your personality and make your luggage stand out wherever you go.",
+      "Dual-Shell Durability – Front crafted in tough polycarbonate (PC) for a sleek finish, and back built with strong polypropylene (PP) for enhanced impact resistance and long-lasting performance.",
+      "Secure Combination Lock – Ensures added safety and peace of mind by keeping your belongings protected throughout your journey.",
+      "Sturdy Zipper for Lasting Security – Designed for smooth operation and built to withstand frequent use, ensuring reliable closure and protection for your belongings.",
+      "Convenient Full-Fabric Convipack with Retractable Handle – Offers organized storage with a durable fabric convipack and a retractable handle for easy handling and smooth maneuverability during travel."
+    ],
+    "category_hint": "Cabin"
   },
   {
     "asin": "B0FC6RZNDC",
@@ -368,7 +362,7 @@
     "asin": "B0FPXLMRCG",
     "brand": "VIP",
     "title": "Aristocrat Atlas Cabin Trolley Bag 55cm | Small | Hard Luggage | Smooth 8-Wheel Suitcase | Secure Combination Lock with Sturdy Zipper | Full Fabric Convipack | 3-Year Warranty (Pearl White)",
-    "url": "https://www.amazon.in/Aristocrat-Suitcase-Combination-Convipack-Warranty/dp/B0FPXLMRCG/ref=sr_1_30",
+    "url": "https://www.amazon.in/Aristocrat-Suitcase-Combination-Convipack-Warranty/dp/B0FPXLMRCG/ref=sr_1_29",
     "price": 1489.0,
     "list_price": 6790.0,
     "discount_pct": 78.0,
@@ -386,31 +380,10 @@
     "category_hint": "Cabin"
   },
   {
-    "asin": "B0FMDR8HNS",
-    "brand": "VIP",
-    "title": "Aristocrat Bruce Cabin Trolley Bag 54cm | Small | Hard Luggage | Smooth 8-Wheel Suitcase | Secure Combination Lock with Sturdy Zipper | Full Fabric Convipack | 3-Year Warranty (Blue)",
-    "url": "https://www.amazon.in/Aristocrat-Suitcase-Combination-Convipack-Warranty/dp/B0FMDR8HNS/ref=sr_1_44",
-    "price": 1489.0,
-    "list_price": 7400.0,
-    "discount_pct": 80.0,
-    "rating": 4.0,
-    "rating_count": 923,
-    "review_count": 0,
-    "image_url": "https://m.media-amazon.com/images/I/71vAo2WjYZL._AC_UL320_.jpg",
-    "bullet_features": [
-      "Stylish Prints That Match Your Vibe – Eye-catching designs that reflect your personality and make your luggage stand out wherever you go.",
-      "Dual-Shell Durability – Front crafted in tough polycarbonate (PC) for a sleek finish, and back built with strong polypropylene (PP) for enhanced impact resistance and long-lasting performance.",
-      "Secure Combination Lock – Ensures added safety and peace of mind by keeping your belongings protected throughout your journey.",
-      "Sturdy Zipper for Lasting Security – Designed for smooth operation and built to withstand frequent use, ensuring reliable closure and protection for your belongings.",
-      "Convenient Full-Fabric Convipack with Retractable Handle – Offers organized storage with a durable fabric convipack and a retractable handle for easy handling and smooth maneuverability during travel."
-    ],
-    "category_hint": "Cabin"
-  },
-  {
     "asin": "B0DVSN9895",
     "brand": "Aristocrat",
     "title": "VIP Aristocrat Slay 55, 66 & 75 Cm Polyproplyene Hard-Sided 4 Wheels Spinner Luggage Set of 3 Trolley Bags for Travel with Combination Lock| 5 Years Warranty (Green)",
-    "url": "https://www.amazon.in/VIP-Aristocrat-Polyproplyene-Hard-Sided-Combination/dp/B0DVSN9895/ref=sr_1_54",
+    "url": "https://www.amazon.in/VIP-Aristocrat-Polyproplyene-Hard-Sided-Combination/dp/B0DVSN9895/ref=sr_1_43",
     "price": 5999.0,
     "list_price": 26000.0,
     "discount_pct": 77.0,
@@ -428,10 +401,42 @@
     "category_hint": "Set"
   },
   {
+    "asin": "B0GCKFJD76",
+    "brand": "Aristocrat",
+    "title": "VIP Aristocrat 3 Pc Set Cabin 55 cm (Small),65 cm (Medium),75 cm (Large) 4 Wheels Trolley,Hard Case Lightweight Bag & Combination Lock Suitcase with 7 Years International Warranty (R.Black)",
+    "url": "https://www.amazon.in/VIP-Aristocrat-Lightweight-Combination-International/dp/B0GCKFJD76/ref=sr_1_47",
+    "price": 5399.0,
+    "list_price": 26000.0,
+    "discount_pct": 79.0,
+    "rating": 4.5,
+    "rating_count": 56,
+    "review_count": 0,
+    "image_url": "https://m.media-amazon.com/images/I/61nyeWSayUL._AC_UL320_.jpg",
+    "bullet_features": [
+      "5 YEARS GLOBAL WARRANTY"
+    ],
+    "category_hint": "Cabin"
+  },
+  {
+    "asin": "B0FD9RJ932",
+    "brand": "Aristocrat",
+    "title": "Aristocrat Combat Set of 3 Trolley Bag, Small + Medium + Large Suitcase | Combination Lock | 8 Wheels | 3 Years International Warranty | Green",
+    "url": "https://www.amazon.in/Aristocrat-Suitcase-Combination-International-Warranty/dp/B0FD9RJ932/ref=sr_1_55",
+    "price": null,
+    "list_price": 29990.0,
+    "discount_pct": 82.0,
+    "rating": 4.3,
+    "rating_count": null,
+    "review_count": 0,
+    "image_url": "https://m.media-amazon.com/images/I/81YfR76qO2L._AC_UL320_.jpg",
+    "bullet_features": [],
+    "category_hint": "Set"
+  },
+  {
     "asin": "B0CGZWCXFT",
     "brand": "Nasher Miles",
     "title": "Stony Brook by Nasher Miles Crescent Hard-Sided Polypropylene Check-in Luggage Pastel Green 28 Inch 75Cm Spinner Trolley Bag",
-    "url": "https://www.amazon.in/Stony-Brook-Crescent-Hard-Sided-Polypropylene/dp/B0CGZWCXFT/ref=sr_1_41",
+    "url": "https://www.amazon.in/Stony-Brook-Crescent-Hard-Sided-Polypropylene/dp/B0CGZWCXFT/ref=sr_1_37",
     "price": 2899.0,
     "list_price": 13995.0,
     "discount_pct": 79.0,
@@ -448,23 +453,43 @@
     "category_hint": "Large"
   },
   {
-    "asin": "B0DFWBBY5W",
+    "asin": "B0CGZTMV9K",
     "brand": "Nasher Miles",
-    "title": "Stony Brook by Nasher Miles Saturn Hard-Sided Polypropylene Check-in Luggage Black 24 inch Suitcase |65cm Trolley Bag",
-    "url": "https://www.amazon.in/Stony-Brook-Hard-Sided-Polypropylene-Suitcase/dp/B0DFWBBY5W/ref=sr_1_54",
-    "price": 2499.0,
-    "list_price": 11995.0,
-    "discount_pct": 79.0,
-    "rating": 5.0,
+    "title": "Stony Brook by Nasher Miles Crescent Hard-Sided Polypropylene Luggage Set of 3 Black Trolley Bags (55, 65 & 75 cm)",
+    "url": "https://www.amazon.in/Stony-Brook-Crescent-Hard-Sided-Polypropylene/dp/B0CGZTMV9K/ref=sr_1_52",
+    "price": 6999.0,
+    "list_price": 35985.0,
+    "discount_pct": 81.0,
+    "rating": 3.9,
+    "rating_count": 12,
+    "review_count": 0,
+    "image_url": "https://m.media-amazon.com/images/I/81pwwVMsPsL._AC_UL320_.jpg",
+    "bullet_features": [
+      "Unbreakable Shell: Hard side 3-piece luggage set has three sizes: Small (55 cms), Medium (65 cms) and Large (75 cms). It features lightweight, durable and unbreakable polypropylene shell, ensuring that your belongings are well-protected during travel.",
+      "Number Lock: Equipped with a secure number lock, the bag provides an extra layer of protection for your items, giving you peace of mind while on the go.",
+      "Effortless Mobility: The luggage bag is equipped with four smooth-rolling wheels for easy manoeuvrability in all directions, and its telescopic handle with adjustable height options ensures comfortable handling while minimizing strain on your arm and wrist.",
+      "Two Spacious Compartments: With two generously sized compartments, the bag provides ample storage space to organize and separate your belongings efficiently."
+    ],
+    "category_hint": "Set"
+  },
+  {
+    "asin": "B0DFW8PKBH",
+    "brand": "Nasher Miles",
+    "title": "Stony Brook by Nasher Miles Saturn Hard-Sided Polypropylene Luggage Set of 3 Teal Trolley Bags Suitcases (55, 65 & 75 cm)",
+    "url": "https://www.amazon.in/Stony-Brook-Hard-Sided-Polypropylene-Suitcases/dp/B0DFW8PKBH/ref=sr_1_53",
+    "price": 6999.0,
+    "list_price": 35985.0,
+    "discount_pct": 81.0,
+    "rating": 1.0,
     "rating_count": 1,
     "review_count": 0,
-    "image_url": "https://m.media-amazon.com/images/I/618S-dKqlLL._AC_UL320_.jpg",
+    "image_url": "https://m.media-amazon.com/images/I/7122s7DHW1L._AC_UL320_.jpg",
     "bullet_features": [
-      "Lightweight and Durable: Our 24-inch check-in luggage (Medium – 65cm) is constructed from premium polypropylene, combining exceptional durability with a lightweight design. It's the perfect choice for trips lasting 5 to 7 days, providing reliable performance and easy handling throughout your journey.",
+      "Lightweight and Durable: Our hard-side 3-piece luggage set features three sizes—Small (55 cm), Medium (65 cm), and Large (75 cm)—to accommodate all your travel needs. Each piece is crafted from 100% polypropylene, a material known for its impressive strength and durability.",
       "Enhanced Security: Travel with peace of mind with our integrated Number Lock feature. This built-in locking mechanism ensures that your belongings are secure, offering an additional layer of protection against unauthorized access. The number combination lock is easy to set and reset, allowing you to personalize the code for your convenience.",
       "Versatile Handles and Smooth Mobility: Enjoy effortless travel with a top carry handle for easy lifting and, on small, medium, and large sizes, a side carry handle for added versatility. Glide smoothly in any direction on eight silent spinner wheels and adjust the telescopic handle to your preferred height for comfortable navigation.",
       "Spacious and Organized: Enjoy easy packing and unpacking with two thoughtfully designed compartments: one with straps and the other with a zippered divider. These compartments provide generous space for your belongings, helping you stay organized by keeping your items neatly arranged and easily accessible throughout your trip."
     ],
-    "category_hint": "Large"
+    "category_hint": "Set"
   }
 ]

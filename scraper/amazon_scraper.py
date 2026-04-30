@@ -424,80 +424,114 @@ async def scrape_product_detail(page: Page, prod: dict) -> Optional[Product]:
     )
 
 
-async def scrape_reviews(page: Page, asin: str, brand: str, limit: int) -> list[Review]:
-    """Paginate through the all-reviews page and collect up to `limit` reviews."""
+async def scrape_reviews_on_current_page(page: Page, asin: str, brand: str, limit: int) -> list[Review]:
+    """Collect reviews from the currently-loaded product detail page.
+
+    As of 2025-2026, Amazon India gates `/product-reviews/{asin}/` behind a
+    sign-in wall. The PDP itself still shows ~5-10 reviews inline without
+    requiring authentication.
+
+    Caller is responsible for navigating to the PDP first (this function
+    is called immediately after `scrape_product_detail`, which already did so).
+    We just scroll to trigger lazy-loaded review widgets, then parse.
+    """
     reviews: list[Review] = []
-    for page_num in range(1, MAX_REVIEW_PAGES + 1):
+
+    # Scroll roughly 70-85% down the page — reviews live near the bottom of the
+    # PDP and are often lazy-loaded only when scrolled into view.
+    try:
+        await page.evaluate("window.scrollTo(0, document.body.scrollHeight * 0.7)")
+        await page.wait_for_timeout(2000)
+        await page.evaluate("window.scrollTo(0, document.body.scrollHeight * 0.85)")
+        await page.wait_for_timeout(1500)
+    except Exception:
+        pass
+
+    # The reviews section on the PDP is wrapped in #reviewsMedley or similar.
+    # Multiple selector paths so we work across A/B variants.
+    cards = await page.query_selector_all(
+        "#reviewsMedley div[data-hook='review'], "
+        "div[data-hook='review']"
+    )
+
+    for c in cards:
         if len(reviews) >= limit:
             break
-        url = f"{AMAZON_BASE}/product-reviews/{asin}/?pageNumber={page_num}&sortBy=recent"
         try:
-            await page.goto(url, timeout=PAGE_TIMEOUT_MS, wait_until="domcontentloaded")
-        except PlaywrightTimeoutError:
-            log.debug("    review page timeout asin=%s p=%d", asin, page_num)
-            continue
+            rid = await c.get_attribute("id") or ""
 
-        if await is_blocked(page):
-            log.warning("    blocked on reviews; cooling down")
-            await asyncio.sleep(30)
-            continue
+            # Rating — i.a-icon-star.a-star-N alt-text contains "X out of 5 stars"
+            rating_el = await c.query_selector(
+                "i[data-hook='review-star-rating'] span, "
+                "i[data-hook='cmps-review-star-rating'] span, "
+                "i.a-icon-star span.a-icon-alt"
+            )
+            rating_text = (await rating_el.inner_text()).strip() if rating_el else ""
+            m = re.search(r"([\d.]+)\s*out of", rating_text)
+            rev_rating = float(m.group(1)) if m else None
 
-        # Two layout flavours — old and new review HTML
-        cards = await page.query_selector_all(
-            "div[data-hook='review'], li[data-hook='review']"
-        )
-        if not cards:
-            break
+            # Title — Amazon's 2026 PDP layout uses h5[data-hook='reviewTitle'].
+            # Older /product-reviews pages used a/span[data-hook='review-title'].
+            title = ""
+            for sel in [
+                "h5[data-hook='reviewTitle']",
+                "a[data-hook='review-title'] span:not([class])",
+                "span[data-hook='review-title'] span",
+                "a[data-hook='review-title']",
+                "[data-hook='review-title']",
+            ]:
+                t_el = await c.query_selector(sel)
+                if t_el:
+                    title = (await t_el.inner_text()).strip()
+                    if title:
+                        break
 
-        for c in cards:
-            if len(reviews) >= limit:
-                break
-            try:
-                rid = await c.get_attribute("id") or ""
-                rating_el = await c.query_selector("i[data-hook='review-star-rating'] span, i[data-hook='cmps-review-star-rating'] span")
-                rating_text = (await rating_el.inner_text()).strip() if rating_el else ""
-                m = re.search(r"([\d.]+)\s*out of", rating_text)
-                rev_rating = float(m.group(1)) if m else None
+            # Body — try multiple selector forms
+            body = ""
+            for sel in [
+                "span[data-hook='review-body'] span",
+                "span[data-hook='review-body']",
+                "div[data-hook='review-collapsed'] span",
+                "[data-hook='review-body']",
+            ]:
+                b_el = await c.query_selector(sel)
+                if b_el:
+                    body = (await b_el.inner_text()).strip()
+                    if body:
+                        break
 
-                title_el = await c.query_selector("a[data-hook='review-title'] span:not([class]), span[data-hook='review-title'] span")
-                title = (await title_el.inner_text()).strip() if title_el else ""
-
-                body_el = await c.query_selector("span[data-hook='review-body'] span")
-                body = (await body_el.inner_text()).strip() if body_el else ""
-
-                if not body and not title:
-                    continue
-
-                author_el = await c.query_selector("span.a-profile-name")
-                author = (await author_el.inner_text()).strip() if author_el else None
-
-                date_el = await c.query_selector("span[data-hook='review-date']")
-                date = (await date_el.inner_text()).strip() if date_el else None
-
-                verified_el = await c.query_selector("span[data-hook='avp-badge']")
-                verified = verified_el is not None
-
-                helpful_el = await c.query_selector("span[data-hook='helpful-vote-statement']")
-                helpful_text = (await helpful_el.inner_text()).strip() if helpful_el else ""
-                helpful_count = parse_int(helpful_text) if helpful_text else 0
-
-                reviews.append(Review(
-                    asin=asin,
-                    brand=brand,
-                    review_id=rid,
-                    rating=rev_rating,
-                    title=title,
-                    body=body,
-                    author=author,
-                    date=date,
-                    verified=verified,
-                    helpful_count=helpful_count,
-                ))
-            except Exception as e:
-                log.debug("      review parse skipped: %s", e)
+            if not body and not title:
                 continue
 
-        await human_delay()
+            author_el = await c.query_selector("span.a-profile-name")
+            author = (await author_el.inner_text()).strip() if author_el else None
+
+            date_el = await c.query_selector("span[data-hook='review-date']")
+            date = (await date_el.inner_text()).strip() if date_el else None
+
+            verified_el = await c.query_selector("span[data-hook='avp-badge']")
+            verified = verified_el is not None
+
+            helpful_el = await c.query_selector("span[data-hook='helpful-vote-statement']")
+            helpful_text = (await helpful_el.inner_text()).strip() if helpful_el else ""
+            helpful_count = parse_int(helpful_text) if helpful_text else 0
+
+            reviews.append(Review(
+                asin=asin,
+                brand=brand,
+                review_id=rid,
+                rating=rev_rating,
+                title=title,
+                body=body,
+                author=author,
+                date=date,
+                verified=verified,
+                helpful_count=helpful_count,
+            ))
+        except Exception as e:
+            log.debug("      review parse skipped: %s", e)
+            continue
+
     return reviews
 
 
@@ -536,13 +570,25 @@ async def run():
             # Step 1: collect candidate products from search
             seen_asins: set[str] = set()
             candidates: list[dict] = []
+            # Build list of acceptable brand-name fragments. Amazon titles vary:
+            # "by Safari Hold-All", "Safari Pentagon", "Kamiliant by American Tourister",
+            # "by Nasher Miles ...". A simple "first word in title" check fails for
+            # multi-word brands and "by <Brand>" patterns. We accept any case-insensitive
+            # match of the full brand or its first significant word (>= 4 chars).
+            brand_lower = brand.lower()
+            brand_words = [w for w in brand_lower.split() if len(w) >= 4]
+            # "VIP" is special — only 3 chars. Use whole-brand match for short brands.
+            if not brand_words:
+                brand_words = [brand_lower]
+            brand_fragments = [brand_lower] + brand_words
+
             for term in search_terms:
                 cards = await search_products(page, term, brand)
                 for c in cards:
                     if c["asin"] in seen_asins:
                         continue
-                    # Filter: title must mention the brand (search is noisy)
-                    if brand.lower().split()[0] not in c["title"].lower():
+                    title_lower = c["title"].lower()
+                    if not any(frag in title_lower for frag in brand_fragments):
                         continue
                     seen_asins.add(c["asin"])
                     candidates.append(c)
@@ -556,15 +602,18 @@ async def run():
             log.info("  collected %d candidate products", len(candidates))
 
             # Step 2: visit each PDP for price/rating + scrape its reviews
+            # We let scrape_product_detail handle the page navigation, then
+            # scrape_reviews_on_current_page reads reviews from the already-loaded
+            # PDP so we avoid a second navigation per product.
             for i, prod in enumerate(candidates, 1):
                 log.info("  [%d/%d] %s", i, len(candidates), prod["title"][:70])
                 detail = await scrape_product_detail(page, prod)
                 if not detail:
                     log.warning("    skipped (no detail)")
                     continue
-                await human_delay()
 
-                revs = await scrape_reviews(
+                # Reviews — page is already on the PDP; just scroll and parse
+                revs = await scrape_reviews_on_current_page(
                     page, detail.asin, brand, TARGET_REVIEWS_PER_PRODUCT
                 )
                 detail.review_count = len(revs)
