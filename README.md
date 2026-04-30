@@ -2,25 +2,64 @@
 
 > Submission for the Moonshot AI Agent Internship Assignment.
 >
-> A competitive intelligence dashboard that scrapes pricing and review data for luggage brands on Amazon India, runs sentiment + aspect analysis, and surfaces non-obvious conclusions through an Agent Insights layer.
+> A competitive intelligence dashboard that analyzes pricing and review data for luggage brands on Amazon India, with sentiment and aspect-based analysis and an Agent Insights layer that surfaces non-obvious conclusions.
+
+> **A note on data:** This submission ships running on a calibrated synthetic dataset, not live Amazon data. The Playwright scraper is implemented and works against `amazon.in` URLs, but Amazon's 2025–26 changes (login-gated reviews + browser fingerprinting that degrades sessions after a few requests) blocked a clean end-to-end scrape without stealth-patching or residential proxies, neither of which were in scope. The synthetic generator uses brand profiles calibrated to actual Indian-market positioning and produces the same JSON schema as the live scraper, so a future stealth-patched run swaps in cleanly. Full reasoning in [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md).
 
 ---
 
 ## TL;DR
 
-```bash
-git clone <this-repo> && cd moonshot-luggage-intel
-python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-playwright install chromium                            # only needed for live scraping
+### macOS / Linux (bash, zsh)
 
-# Option A — run the dashboard immediately on a realistic synthetic dataset:
+```bash
+cd moonshot-luggage-intel
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+# playwright install chromium     # only needed for live scraping (Option B)
+
+# Option A — run the dashboard immediately on the bundled synthetic dataset:
 python -m scraper.generate_synthetic
 python -m analysis.pipeline
 streamlit run dashboard/app.py
 
 # Option B — collect real Amazon India data first, then build the dashboard on it:
 python -m scraper.amazon_scraper       # ~25-40 min, run on your local machine
+python -m analysis.pipeline
+streamlit run dashboard/app.py
+```
+
+### Windows (PowerShell)
+
+```powershell
+cd moonshot-luggage-intel
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+# playwright install chromium    # only needed for live scraping (Option B)
+
+# Option A — run the dashboard on the bundled synthetic dataset:
+python -m scraper.generate_synthetic
+python -m analysis.pipeline
+streamlit run dashboard/app.py
+```
+
+If PowerShell blocks `Activate.ps1` with an "execution of scripts is disabled" error, run this once:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+Then re-run `.venv\Scripts\Activate.ps1`. The `(.venv)` prefix on your prompt confirms it's active.
+
+### Windows (Command Prompt)
+
+```cmd
+cd moonshot-luggage-intel
+python -m venv .venv
+.venv\Scripts\activate.bat
+pip install -r requirements.txt
+python -m scraper.generate_synthetic
 python -m analysis.pipeline
 streamlit run dashboard/app.py
 ```
@@ -258,5 +297,5 @@ A few choices worth flagging:
 
 - **Streamlit over Next.js** — the rubric weighs *insight quality* (35 of 100 points) over framework choice. Streamlit ships polished output in days, not weeks, and frees attention for analysis depth.
 - **VADER over transformer sentiment** — explained above. The accuracy delta wasn't worth the friction of a 400MB model download for a grading pipeline.
-- **Synthetic data fallback** — the dashboard works on first clone without anyone needing to scrape. Reviewers can evaluate the *actual artifact* immediately, then optionally run the real scraper to validate end-to-end.
+- **Calibrated synthetic data over an incomplete real scrape** — Amazon India's bot detection has tightened in 2025–26. Reviews are now login-gated, and Playwright sessions degrade after a few requests as fingerprinting kicks in. A clean live scrape would require `playwright-stealth` or residential proxies, neither in scope. Rather than ship partial real data, I built a deterministic synthetic generator calibrated against actual Indian-market positioning — same JSON schema as the real scraper, so a future stealth-patched run swaps in cleanly. Full reasoning in [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md).
 - **Rule-based Agent Insights with optional LLM polish** — pure-LLM approaches sound impressive but produce vague observations. Anchoring insights in deterministic findings keeps them verifiable and surprising.
