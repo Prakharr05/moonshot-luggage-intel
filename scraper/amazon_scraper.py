@@ -249,16 +249,62 @@ async def search_products(page: Page, search_term: str, brand: str) -> list[dict
             asin = await card.get_attribute("data-asin")
             if not asin:
                 continue
-            # Title + URL — Amazon has used both 'h2 a' and 'h2 a.a-link-normal'
-            link_el = await card.query_selector("h2 a")
-            if not link_el:
+
+            # Amazon's 2026 layout split brand and product name across two elements:
+            #   - h2 (often "h2.a-size-mini") contains the brand label, e.g. "Safari"
+            #   - a separate <a.a-link-normal> contains the actual product title text
+            # We look for the product link first (multiple selector fallbacks), then
+            # try a few places for the title text. Older layouts with `h2 a` are
+            # also still tried at the end so this works on both.
+
+            link_el = None
+            href = None
+            for sel in [
+                'a.a-link-normal.s-line-clamp-2[href*="/dp/"]',
+                'a.a-link-normal.s-line-clamp-4[href*="/dp/"]',
+                'a.a-link-normal[href*="/dp/"]',
+                'h2 a.a-link-normal',
+                'h2 a',
+            ]:
+                link_el = await card.query_selector(sel)
+                if link_el:
+                    href = await link_el.get_attribute("href")
+                    if href:
+                        break
+
+            if not link_el or not href:
                 continue
-            href = await link_el.get_attribute("href")
+
+            # Title — try several places. The link's inner_text usually has it.
             title = (await link_el.inner_text()).strip()
-            if not href or not title:
+            if not title:
+                # Fall back to nested h2 inside the link
+                inner_h2 = await link_el.query_selector("h2")
+                if inner_h2:
+                    title = (await inner_h2.inner_text()).strip()
+            if not title:
+                # Last resort: the card-level h2.a-size-base-plus or similar
+                t_el = await card.query_selector(
+                    'h2.a-size-base-plus, h2.a-size-medium, [data-cy="title-recipe"] h2'
+                )
+                if t_el:
+                    title = (await t_el.inner_text()).strip()
+
+            if not title:
                 continue
-            # Skip sponsored placements that don't represent the brand fairly
-            sponsored = await card.query_selector('[aria-label="Sponsored"], span:has-text("Sponsored")')
+
+            # Sponsored detection — Amazon hides this under several markers
+            sponsored = await card.query_selector(
+                '[aria-label="Sponsored"], '
+                'span.puis-sponsored-label-text, '
+                'span:has-text("Sponsored")'
+            )
+            # Sponsored cards use /sspa/click redirect URLs that don't go directly
+            # to the product page. Detect this and try to extract a clean ASIN URL.
+            if href.startswith("/sspa/") or "sspa/click" in href:
+                sponsored = sponsored or True
+                # Build a direct PDP URL from the ASIN we already have
+                href = f"/dp/{asin}"
 
             img_el = await card.query_selector("img.s-image")
             image_url = await img_el.get_attribute("src") if img_el else None
